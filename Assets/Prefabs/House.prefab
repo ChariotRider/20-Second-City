@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6347740444032176501
+--- !u!1 &145557280998434412
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1437680818177689256}
-  - component: {fileID: 522192500189672881}
-  - component: {fileID: 6619042893461722474}
-  - component: {fileID: 8506377094731818778}
+  - component: {fileID: 725519243392482068}
+  - component: {fileID: 9183840736052429362}
+  - component: {fileID: 4349113512342848383}
+  - component: {fileID: -1515397600039532296}
   m_Layer: 0
-  m_Name: Quarry
+  m_Name: House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1437680818177689256
+--- !u!4 &725519243392482068
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6347740444032176501}
+  m_GameObject: {fileID: 145557280998434412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5028, y: 0.5146, z: 0.3734578}
-  m_LocalScale: {x: 0.74125713, y: 0.74125713, z: 0.74125713}
+  m_LocalPosition: {x: 0.009, y: 0.018, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &522192500189672881
+--- !u!212 &9183840736052429362
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6347740444032176501}
+  m_GameObject: {fileID: 145557280998434412}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 55a7d32b1b47b084eb1b89b68caf5827, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6f02b494ce315294590d527905199d21, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,46 +86,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6619042893461722474
+--- !u!114 &4349113512342848383
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6347740444032176501}
+  m_GameObject: {fileID: 145557280998434412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2621285e85946d49bbb4c4914b4661c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8719e99a8ef48aa4692c55c9f6e28629, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BuildingName: Quarry
-  height: 1
-  width: 1
-  woodCost: 5
-  stoneCost: 0
-  isProductionBuilding: 1
+  BuildingName: House
+  height: 0
+  width: 0
+  woodCost: 7
+  stoneCost: 2
+  isProductionBuilding: 0
   resourceCosts: 
   spawnX: 0
   spawnY: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 6f02b494ce315294590d527905199d21, type: 3}
   id: 0
   gameManager: {fileID: 0}
   occupiedTiles: []
-  resourceCollectedObject: {fileID: 5227703610899544933, guid: 517a295ad30239e4c8f7f64bfb6b57d2, type: 3}
   range: 1
   tilesInRange: []
-  secondsBetweenCollection: 1
-  timeUntilNextCollection: 0
-  collectionAmount: 1
-  basePoints: -3
-  numberOfMountainsInRange: 0
---- !u!61 &8506377094731818778
+  buildingsInRange: []
+  scorearray: 02000000040000000800000010000000
+  buildingNameListForScoring: []
+--- !u!61 &-1515397600039532296
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6347740444032176501}
+  m_GameObject: {fileID: 145557280998434412}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}

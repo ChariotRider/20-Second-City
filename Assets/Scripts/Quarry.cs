@@ -64,6 +64,7 @@ public class Quarry : Building
         resourceManager.collectStone(amountToCollect);
     }
 
+
     private void OnMouseEnter()
     {
         foreach (TileDataObject tile in tilesInRange)
